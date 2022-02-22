@@ -77,7 +77,7 @@ function CodeMirrorSpellChecker(options) {
 
 		if(!CodeMirrorSpellChecker.dic_loading) {
 			CodeMirrorSpellChecker.dic_loading = true;
-			var dicUrl = urlBase + langs[lg] + '.aff';
+			var dicUrl = urlBase + langs[lg] + '.dic';
 			var xhr_dic = new XMLHttpRequest();
 			xhr_dic.open('GET', dicUrl, true);
 			xhr_dic.onload = function() {
